@@ -1,0 +1,68 @@
+@import "./reset.css";
+@import "./typography.scss";
+
+body {
+  background: purple;
+}
+
+$red: #D5464E;
+$purple: #2D0633;
+
+@keyframes flicker {
+  0%  { opacity: 1 }
+  65% { opacity: 1 }
+  78% { opacity: 0.5 }
+  80% { opacity: 1 }
+  82% { opacity: 1 }
+  86% { opacity: 0 }
+  92% { opacity: 1 }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 { font-size: 7.993em }
+h2 { font-size: 5.653em }
+h3 { font-size: 3.998em }
+h4 { font-size: 2.827em }
+h5 { font-size: 1.999em }
+h6 { font-size: 1.414em }
+
+h1,h2,h3,h4,h5,h6 { margin: 0 }
+
+.background {
+  align-items: center;
+  background: $purple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.white { color: white }
+.purple { color: $purple }
+.red { color: $red }
+
+.flicker { animation: flicker 2.5s ease-out infinite }
+.slant { transform: skew(-10deg) rotate(-10deg) }
+
+.header {
+  font-weight: 700;
+  line-height: 0.93em;
+  text-align: center;
+}
+
+.clickable:hover { cursor: pointer }
+
+.barlow {
+  font-family: "Barlow", Helvetica, "Sans-Serif";
+  font-weight: 600;
+}
+.condensed { font-family: "Barlow Condensed" }
+
+.fixed {
+  position: fixed;
+  top: 2rem;
+}
