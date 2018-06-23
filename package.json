@@ -6,13 +6,20 @@
   "author": "Jonathan Turnbull-Reilly <jonathan.d.reilly@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel --no-cache index.html",
+    "build": "parcel build index.html"
   },
   "dependencies": {
-    "bulma": "^0.7.1"
+    "bulma": "^0.7.1",
+    "components": "^0.1.0",
+    "envify": "~0.2.0",
+    "preact": "^8.2.9",
+    "preact-compat": "^3.18.0"
   },
   "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-preact": "^1.1.0",
     "node-sass": "^4.9.0",
     "parcel-bundler": "^1.8.1"
   }

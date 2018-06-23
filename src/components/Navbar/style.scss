@@ -1,0 +1,77 @@
+@import "../../stylesheets/bulma-config.scss";
+
+.navbar {
+  padding: 40px;
+  position: relative;
+  box-sizing: border-box;
+  &:before {
+    content: " ";
+    background: linear-gradient(180deg, $purple 0%, transparent 100%);
+    height: calc(100% - 20px);
+    opacity: 0.65;
+    position: absolute;
+    width: calc(100% - 80px);
+  }
+  &.bg-red:before {
+    opacity: 1;
+    background: linear-gradient(180deg, $red 0%, transparent 100%);
+  }
+  &.bg-white {
+    .navbar-item,
+    .navbar__logo,
+    .button {
+      color: $purple !important;
+      transition: color 250ms ease-in;
+    }
+    .button {
+      border: 1px solid $purple !important;
+      transition: border 250ms ease-in;
+    }
+    &:before {
+      animation: fade-change 1s;
+      opacity: 1;
+      animation: fade-change 1s;
+      background: linear-gradient(180deg, white 0%, transparent 100%);
+      // background: white;
+    }
+  }
+}
+
+.navbar .container {
+  padding-top: 1rem;
+}
+
+.navbar.is-transparent {
+  background: transparent;
+}
+
+.navbar .navbar-item:not(.navbar__logo) {
+  box-sizing: border-box;
+  &:hover { background: unset }
+  @media screen and (max-width: $desktop) {
+    display:none;
+    // background-color: $purple !important;
+    // padding: 0.5rem 1rem;
+    // &:before { content: none }
+  }
+}
+
+
+.navbar .navbar__logo {
+  margin-top: 1.5rem;
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.navbar .navbar-item .navbar__link {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.pd__navbar-item {
+  border: 1px solid $red
+}

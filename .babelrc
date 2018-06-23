@@ -1,3 +1,4 @@
 {
-  "presets": ["env"]
+  "presets": ["env", "preact"],
+  "plugins": ["transform-class-properties"]
 }

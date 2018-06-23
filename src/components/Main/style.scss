@@ -1,0 +1,26 @@
+@import "../../stylesheets/bulma-config.scss";
+
+.pd__hero--top {
+  @media screen and (min-width: $desktop) {
+    // margin-top: 40px;
+  }
+}
+
+.pd__hero-text {
+  padding: 6em 0;
+}
+
+.pd__tagline {
+  color: white;
+  font-size: 28px;
+  line-height: 40px;
+  margin: 0 auto 2rem;
+  max-width: 775px;
+  text-align: center;
+}
+
+.pd__cta {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
