@@ -4,8 +4,10 @@ import preact from 'preact';
 
 import style from './style';
 
-const anchorLink = () =>
+const anchorLink = (e) => {
+  e.preventDefault();
   window.scrollTo({ top: 0, behavior: "smooth" });
+}
 
 const Logo = () =>
   <a
