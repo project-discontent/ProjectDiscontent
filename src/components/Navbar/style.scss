@@ -1,19 +1,25 @@
 @import "../../stylesheets/bulma-config.scss";
 
 .navbar {
+  align-items: flex-start !important;
   padding: 40px;
   position: relative;
   box-sizing: border-box;
+  @media screen and (max-width: $tablet) {
+    padding: 40px 0;
+  }
   &:before {
     content: " ";
     background: linear-gradient(180deg, $purple 0%, transparent 100%);
     height: calc(100% - 20px);
-    opacity: 0.65;
+    opacity: 1;
     position: absolute;
     width: calc(100% - 80px);
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+    }
   }
   &.bg-red:before {
-    opacity: 1;
     background: linear-gradient(180deg, $red 0%, transparent 100%);
   }
   &.bg-white {
@@ -28,17 +34,14 @@
       transition: border 250ms ease-in;
     }
     &:before {
-      animation: fade-change 1s;
-      opacity: 1;
-      animation: fade-change 1s;
       background: linear-gradient(180deg, white 0%, transparent 100%);
-      // background: white;
     }
   }
 }
 
 .navbar .container {
-  padding-top: 1rem;
+  align-items: flex-start !important;
+  padding-top: 1.75rem;
 }
 
 .navbar.is-transparent {
@@ -50,15 +53,12 @@
   &:hover { background: unset }
   @media screen and (max-width: $desktop) {
     display:none;
-    // background-color: $purple !important;
-    // padding: 0.5rem 1rem;
-    // &:before { content: none }
   }
 }
 
 
 .navbar .navbar__logo {
-  margin-top: 1.5rem;
+  margin-top: 0.71rem;
   @media screen and (min-width: $desktop) {
     position: absolute;
     left: 50%;

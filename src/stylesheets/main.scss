@@ -2,7 +2,6 @@
 @import "bulma";
 
 @import "./reset.css";
-@import "./navbar.scss";
 
 
 * {
@@ -10,9 +9,13 @@
 }
 
 body {
+  color: $purple;
   font-family: Barlow;
-  padding: 40px;
   scroll-behavior: smooth;
+  min-width: 400px;
+  @media screen and (min-width: $tablet) {
+    padding: 40px;
+  }
 }
 
 h1 { font-size: $size-1 }

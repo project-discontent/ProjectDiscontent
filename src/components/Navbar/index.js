@@ -10,8 +10,10 @@ const colorClass = (y) => {
   const intro = document.querySelector('#intro')
   const services = document.querySelector('#services')
   const team = document.querySelector('#team')
+  const contact = document.querySelector('#contact')
 
-  return team && y > team.offsetTop - 64 ? 'bg-white'
+  return team && y > contact.offsetTop - 64 ? 'bg-purple'
+    : team && y > team.offsetTop - 64 ? 'bg-white'
     : services && y > services.offsetTop - 64 ? 'bg-red'
     : intro && y > intro.offsetTop - 64 ? 'bg-purple'
     : ''
@@ -37,9 +39,7 @@ class Navbar extends preact.Component {
         class={`navbar is-transparent is-fixed-top ${colorClass(scrollY)}`}
         style={{ top: 0 - scrollY > -40 ? 0 - scrollY : -40 }}
       >
-
       <div class="container is-fluid">
-
         <Logo />
 
         <div class="navbar-start">
@@ -51,7 +51,6 @@ class Navbar extends preact.Component {
             Team
           </a>
         </div>
-
 
         <div class="navbar-end">
           <div class="navbar-item">

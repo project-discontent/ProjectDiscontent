@@ -3,7 +3,14 @@ import preact from 'preact';
 /** @jsx preact.h */
 
 import Navbar from '../Navbar/index';
+import Footer from '../Footer/index';
+import ContactForm from '../ContactForm';
 import style from "./style.scss";
+import portraitD from "../../../static/images/portraitD.png";
+import portraitE from "../../../static/images/portraitE.png";
+import portraitJ from "../../../static/images/portraitJ.png";
+import portraitM from "../../../static/images/portraitM.png";
+import portraitN from "../../../static/images/portraitN.png";
 
 const App = () =>
   <div>
@@ -32,7 +39,7 @@ const App = () =>
       </div>
     </section>
 
-    <section id="services" className="section hero has-background-danger">
+    <section id="services" className="section has-background-danger">
       <div class="pd__hero-text">
         <h4 class="barlow white header slant is-size-6-mobile">
           BUT WE ARE ALSO
@@ -148,7 +155,7 @@ const App = () =>
       <br/>
     </section>
 
-    <section id="team" className="section hero has-background-white" style={{ height: "500vh"}}>
+    <section id="team" className="section has-background-white">
       <div class="pd__hero-text">
         <h1 class="condensed red header slant is-size-3-mobile">
           LET'S MAKE
@@ -157,9 +164,93 @@ const App = () =>
           A CHANGE
         </h1>
       </div>
+
+      <div className="container">
+        <div className="pd__bios">
+          <div className="pd__bio">
+            <img className="pd__portrait" src={portraitD} />
+            <div className="pd__bio-text">
+              <strong class="red is-size-6">
+                Danielle <span class="purple">/ Design</span>
+              </strong>
+              <p class="purple subtitle is-size-6">
+                Short bio text that can actually be a little bit long, so I left enough room for a small paragraph rather than one little tagline
+              </p>
+            </div>
+          </div>
+
+          <div className="pd__bio">
+            <img className="pd__portrait" src={portraitN} />
+            <div className="pd__bio-text">
+              <strong class="red is-size-6">
+                Naike <span class="purple">/ Marketing </span>
+              </strong>
+              <p class="purple subtitle is-size-6">
+                Short bio text that can actually be a little bit long, so I left enough room for a small paragraph rather than one little tagline
+              </p>
+            </div>
+          </div>
+
+          <div className="pd__bio">
+            <img className="pd__portrait" src={portraitM} />
+            <div className="pd__bio-text">
+              <strong class="red is-size-6">
+                Meryl <span class="purple">/ Video</span>
+              </strong>
+              <p class="purple subtitle is-size-6">
+                Short bio text that can actually be a little bit long, so I left enough room for a small paragraph rather than one little tagline
+              </p>
+            </div>
+          </div>
+
+          <div className="pd__bio">
+            <img className="pd__portrait" src={portraitJ} />
+            <div className="pd__bio-text">
+              <strong class="red is-size-6">
+                Jonathan <span class="purple">/ Web</span>
+              </strong>
+              <p class="purple subtitle is-size-6">
+                Short bio text that can actually be a little bit long, so I left enough room for a small paragraph rather than one little tagline
+              </p>
+            </div>
+          </div>
+
+          <div className="pd__bio">
+            <img className="pd__portrait" src={portraitE} />
+            <div className="pd__bio-text">
+              <strong class="red is-size-6">
+                Emily <span class="purple">/ Writing</span>
+              </strong>
+              <p class="purple subtitle is-size-6">
+                Short bio text that can actually be a little bit long, so I left enough room for a small paragraph rather than one little tagline
+              </p>
+            </div>
+          </div>
+
+          <div className="pd__bio">
+            <div className="pd__bio-text"/>
+          </div>
+        </div>
+      </div>
+      <div class="pd__cta purple">
+        Now let's do something
+        <br/>
+        ↓
+      </div>
+
     </section>
 
+    <section id="contact" className="section has-background-dark">
+      <div class="pd__hero-text">
+        <h2 class="condensed white header slant is-size-3-mobile">
+          WORK WITH US
+        </h2>
+      </div>
 
+      <ContactForm />
+    </section>
+
+    <Footer />
   </div>
 
 
