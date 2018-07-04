@@ -2006,7 +2006,9 @@ _preact2.default.render(_preact2.default.h(_index2.default, null), mountNode, mo
 if (module.hot) {
   module.hot.accept();
 }
-},{"preact":10,"./components/Main/index.js":8,"./stylesheets/main.scss":6}],50:[function(require,module,exports) {
+
+console.log("LOADED");
+},{"preact":10,"./components/Main/index.js":8,"./stylesheets/main.scss":6}],51:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -2176,5 +2178,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[50,4], null)
+},{}]},{},[51,4], null)
 //# sourceMappingURL=/src.5ea0fab6.map
