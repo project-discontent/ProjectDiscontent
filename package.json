@@ -6,8 +6,8 @@
   "author": "Jonathan Turnbull-Reilly <jonathan.d.reilly@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel --no-cache index.html",
-    "build": "parcel build index.html",
+    "start": "parcel -d docs --no-cache index.html",
+    "build": "parcel build -d docs index.html",
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
