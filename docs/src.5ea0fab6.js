@@ -1114,7 +1114,7 @@ exports.render = render;
 exports.rerender = rerender;
 exports.options = options;
 //# sourceMappingURL=preact.esm.js.map
-},{}],41:[function(require,module,exports) {
+},{}],40:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -1144,7 +1144,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],38:[function(require,module,exports) {
+},{}],35:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -1175,13 +1175,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":41}],42:[function(require,module,exports) {
+},{"./bundle-url":40}],39:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":38}],35:[function(require,module,exports) {
+},{"_css_loader":35}],34:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1232,13 +1232,24 @@ var Logo = function Logo() {
 };
 
 exports.default = Logo;
-},{"preact":10,"./style":42}],31:[function(require,module,exports) {
+},{"preact":10,"./style":39}],33:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":38}],26:[function(require,module,exports) {
+},{"_css_loader":35}],31:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var scrollToID = exports.scrollToID = function scrollToID(anchor) {
+  console.log("WHATUP");
+  var el = document.getElementById(anchor);
+  window.scrollTo({ top: el.offsetTop, behavior: "smooth" });
+};
+},{}],24:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1258,6 +1269,8 @@ var _index2 = _interopRequireDefault(_index);
 var _style = require('./style.scss');
 
 var _style2 = _interopRequireDefault(_style);
+
+var _utility = require('../../utility.js');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1321,12 +1334,22 @@ var Navbar = function (_preact$Component) {
             { 'class': 'navbar-start' },
             _preact2.default.h(
               'a',
-              { 'class': 'navbar-item has-text-weight-bold has-text-white', to: '#about' },
+              {
+                'class': 'navbar-item has-text-weight-bold has-text-white',
+                onClick: function onClick() {
+                  return (0, _utility.scrollToID)("services");
+                }
+              },
               'Services'
             ),
             _preact2.default.h(
               'a',
-              { 'class': 'navbar-item has-text-weight-bold has-text-white', to: '#team' },
+              {
+                'class': 'navbar-item has-text-weight-bold has-text-white',
+                onClick: function onClick() {
+                  return (0, _utility.scrollToID)("team");
+                }
+              },
               'Team'
             )
           ),
@@ -1340,7 +1363,10 @@ var Navbar = function (_preact$Component) {
                 'a',
                 {
                   'class': 'navbar__link button is-size-7 ',
-                  href: '#collab' },
+                  onClick: function onClick() {
+                    return (0, _utility.scrollToID)("contact");
+                  }
+                },
                 'Work with us'
               )
             )
@@ -1354,13 +1380,13 @@ var Navbar = function (_preact$Component) {
 }(_preact2.default.Component);
 
 exports.default = Navbar;
-},{"preact":10,"../Logo/index":35,"./style.scss":31}],32:[function(require,module,exports) {
+},{"preact":10,"../Logo/index":34,"./style.scss":33,"../../utility.js":31}],32:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":38}],27:[function(require,module,exports) {
+},{"_css_loader":35}],25:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1417,7 +1443,7 @@ var Footer = function Footer() {
 };
 
 exports.default = Footer;
-},{"preact":10,"./style.scss":32,"../Logo/index":35}],23:[function(require,module,exports) {
+},{"preact":10,"./style.scss":32,"../Logo/index":34}],17:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1500,21 +1526,21 @@ var ContactForm = function ContactForm() {
 };
 
 exports.default = ContactForm;
-},{"preact":10}],22:[function(require,module,exports) {
+},{"preact":10}],19:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":38}],12:[function(require,module,exports) {
+},{"_css_loader":35}],12:[function(require,module,exports) {
 module.exports="/portraitD.2ee722c5.png";
-},{}],14:[function(require,module,exports) {
-module.exports="/portraitE.ae151975.png";
 },{}],16:[function(require,module,exports) {
+module.exports="/portraitE.ae151975.png";
+},{}],13:[function(require,module,exports) {
 module.exports="/portraitJ.702c7122.png";
-},{}],18:[function(require,module,exports) {
+},{}],26:[function(require,module,exports) {
 module.exports="/portraitM.00e84c04.png";
-},{}],20:[function(require,module,exports) {
+},{}],18:[function(require,module,exports) {
 module.exports="/portraitN.6a053e93.png";
 },{}],8:[function(require,module,exports) {
 'use strict';
@@ -1563,7 +1589,12 @@ var _portraitN = require('../../../static/images/portraitN.png');
 
 var _portraitN2 = _interopRequireDefault(_portraitN);
 
+var _utility = require('../../utility.js');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// Tell Babel to transform JSX into preact.h() calls:
+/** @jsx preact.h */
 
 var App = function App() {
   return _preact2.default.h(
@@ -1597,7 +1628,9 @@ var App = function App() {
         ),
         _preact2.default.h(
           'div',
-          { 'class': 'pd__cta red' },
+          { 'class': 'pd__cta red', onClick: function onClick() {
+              return (0, _utility.scrollToID)("contact");
+            } },
           'Work with us',
           _preact2.default.h('br', null),
           '\u2193'
@@ -1971,17 +2004,15 @@ var App = function App() {
     _preact2.default.h(_index4.default, null)
   );
 };
-// Tell Babel to transform JSX into preact.h() calls:
-/** @jsx preact.h */
 
 exports.default = App;
-},{"preact":10,"../Navbar/index":26,"../Footer/index":27,"../ContactForm":23,"./style.scss":22,"../../../static/images/portraitD.png":12,"../../../static/images/portraitE.png":14,"../../../static/images/portraitJ.png":16,"../../../static/images/portraitM.png":18,"../../../static/images/portraitN.png":20}],6:[function(require,module,exports) {
+},{"preact":10,"../Navbar/index":24,"../Footer/index":25,"../ContactForm":17,"./style.scss":19,"../../../static/images/portraitD.png":12,"../../../static/images/portraitE.png":16,"../../../static/images/portraitJ.png":13,"../../../static/images/portraitM.png":26,"../../../static/images/portraitN.png":18,"../../utility.js":31}],6:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./reset.css":[["reset.db2c05a2.css",45],"reset.db2c05a2.js",45],"_css_loader":38}],4:[function(require,module,exports) {
+},{"./reset.css":[["reset.db2c05a2.css",38],"reset.db2c05a2.js",38],"_css_loader":35}],4:[function(require,module,exports) {
 'use strict';
 
 var _preact = require('preact');
@@ -2006,9 +2037,7 @@ _preact2.default.render(_preact2.default.h(_index2.default, null), mountNode, mo
 if (module.hot) {
   module.hot.accept();
 }
-
-console.log("LOADED");
-},{"preact":10,"./components/Main/index.js":8,"./stylesheets/main.scss":6}],46:[function(require,module,exports) {
+},{"preact":10,"./components/Main/index.js":8,"./stylesheets/main.scss":6}],45:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -2037,7 +2066,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '63879' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50467' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -2178,128 +2207,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],47:[function(require,module,exports) {
-var getBundleURL = require('./bundle-url').getBundleURL;
-
-function loadBundlesLazy(bundles) {
-  if (!Array.isArray(bundles)) {
-    bundles = [bundles];
-  }
-
-  var id = bundles[bundles.length - 1];
-
-  try {
-    return Promise.resolve(require(id));
-  } catch (err) {
-    if (err.code === 'MODULE_NOT_FOUND') {
-      return new LazyPromise(function (resolve, reject) {
-        loadBundles(bundles).then(resolve, reject);
-      });
-    }
-
-    throw err;
-  }
-}
-
-function loadBundles(bundles) {
-  var id = bundles[bundles.length - 1];
-
-  return Promise.all(bundles.slice(0, -1).map(loadBundle)).then(function () {
-    return require(id);
-  });
-}
-
-var bundleLoaders = {};
-function registerBundleLoader(type, loader) {
-  bundleLoaders[type] = loader;
-}
-
-module.exports = exports = loadBundlesLazy;
-exports.load = loadBundles;
-exports.register = registerBundleLoader;
-
-var bundles = {};
-function loadBundle(bundle) {
-  var id;
-  if (Array.isArray(bundle)) {
-    id = bundle[1];
-    bundle = bundle[0];
-  }
-
-  if (bundles[bundle]) {
-    return bundles[bundle];
-  }
-
-  var type = (bundle.substring(bundle.lastIndexOf('.') + 1, bundle.length) || bundle).toLowerCase();
-  var bundleLoader = bundleLoaders[type];
-  if (bundleLoader) {
-    return bundles[bundle] = bundleLoader(getBundleURL() + bundle).then(function (resolved) {
-      if (resolved) {
-        module.bundle.modules[id] = [function (require, module) {
-          module.exports = resolved;
-        }, {}];
-      }
-
-      return resolved;
-    });
-  }
-}
-
-function LazyPromise(executor) {
-  this.executor = executor;
-  this.promise = null;
-}
-
-LazyPromise.prototype.then = function (onSuccess, onError) {
-  if (this.promise === null) this.promise = new Promise(this.executor);
-  return this.promise.then(onSuccess, onError);
-};
-
-LazyPromise.prototype.catch = function (onError) {
-  if (this.promise === null) this.promise = new Promise(this.executor);
-  return this.promise.catch(onError);
-};
-},{"./bundle-url":41}],48:[function(require,module,exports) {
-module.exports = function loadJSBundle(bundle) {
-  return new Promise(function (resolve, reject) {
-    var script = document.createElement('script');
-    script.async = true;
-    script.type = 'text/javascript';
-    script.charset = 'utf-8';
-    script.src = bundle;
-    script.onerror = function (e) {
-      script.onerror = script.onload = null;
-      reject(e);
-    };
-
-    script.onload = function () {
-      script.onerror = script.onload = null;
-      resolve();
-    };
-
-    document.getElementsByTagName('head')[0].appendChild(script);
-  });
-};
-},{}],49:[function(require,module,exports) {
-module.exports = function loadCSSBundle(bundle) {
-  return new Promise(function (resolve, reject) {
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = bundle;
-    link.onerror = function (e) {
-      link.onerror = link.onload = null;
-      reject(e);
-    };
-
-    link.onload = function () {
-      link.onerror = link.onload = null;
-      resolve();
-    };
-
-    document.getElementsByTagName('head')[0].appendChild(link);
-  });
-};
-},{}],0:[function(require,module,exports) {
-var b=require(47);b.register("js",require(48));b.register("css",require(49));
-},{}]},{},[46,0,4], null)
+},{}]},{},[45,4], null)
 //# sourceMappingURL=/src.5ea0fab6.map

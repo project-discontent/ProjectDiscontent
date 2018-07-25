@@ -98,13 +98,13 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({45:[function(require,module,exports) {
+})({38:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":38}],46:[function(require,module,exports) {
+},{"_css_loader":35}],41:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -133,7 +133,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '63879' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50467' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -274,7 +274,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],41:[function(require,module,exports) {
+},{}],40:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -304,7 +304,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],47:[function(require,module,exports) {
+},{}],42:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -385,7 +385,7 @@ LazyPromise.prototype.catch = function (onError) {
   if (this.promise === null) this.promise = new Promise(this.executor);
   return this.promise.catch(onError);
 };
-},{"./bundle-url":41}],48:[function(require,module,exports) {
+},{"./bundle-url":40}],43:[function(require,module,exports) {
 module.exports = function loadJSBundle(bundle) {
   return new Promise(function (resolve, reject) {
     var script = document.createElement('script');
@@ -407,5 +407,5 @@ module.exports = function loadJSBundle(bundle) {
   });
 };
 },{}],0:[function(require,module,exports) {
-var b=require(47);b.register("js",require(48));b.load([]);
-},{}]},{},[46,0], null)
+var b=require(42);b.register("js",require(43));b.load([]);
+},{}]},{},[41,0], null)

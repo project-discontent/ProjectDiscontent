@@ -3,6 +3,8 @@
   font-weight: 700;
   line-height: 0.65rem;
   text-align: center; }
+  .pd-logo:hover {
+    background: transparent; }
 .navbar {
   align-items: flex-start !important;
   padding: 40px;
@@ -76,6 +78,7 @@
   text-align: center; }
 
 .pd__cta {
+  cursor: pointer;
   font-size: 18px;
   font-weight: 600;
   text-align: center; }
