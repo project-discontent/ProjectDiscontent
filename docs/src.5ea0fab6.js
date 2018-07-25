@@ -1429,13 +1429,13 @@ var Footer = function Footer() {
       'Follow us: \xA0',
       _preact2.default.h(
         'a',
-        { className: 'red', href: 'instagram.com' },
+        { className: 'red', href: 'https://www.instagram.com/project.discontent/' },
         'Instagram'
       ),
       ',\xA0',
       _preact2.default.h(
         'a',
-        { className: 'red', href: 'twitter.com' },
+        { className: 'red', href: 'https://twitter.com/_projdiscontent' },
         'Twitter'
       )
     )
