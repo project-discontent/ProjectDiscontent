@@ -16,9 +16,9 @@ const Footer = () =>
     <br/>
     <div className="level-right has-text-weight-bold has-text-centered">
         Follow us: &nbsp;
-        <a className="red" href="instagram.com">Instagram</a>
+        <a className="red" href="https://www.instagram.com/project.discontent/">Instagram</a>
         ,&nbsp;
-        <a className="red" href="twitter.com">Twitter</a>
+        <a className="red" href="https://twitter.com/_projdiscontent">Twitter</a>
     </div>
   </div>
 
