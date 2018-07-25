@@ -174,7 +174,7 @@ const App = () =>
                 Danielle <span class="purple">/ Design</span>
               </strong>
               <p class="purple subtitle is-size-6">
-                Short bio text that can actually be a little bit long, so I left enough room for a small paragraph rather than one little tagline
+                Design Manager by weekday. Hiker, spin instructor, and sporadic crafter by weekend.
               </p>
             </div>
           </div>
@@ -186,7 +186,7 @@ const App = () =>
                 Naike <span class="purple">/ Marketing </span>
               </strong>
               <p class="purple subtitle is-size-6">
-                Short bio text that can actually be a little bit long, so I left enough room for a small paragraph rather than one little tagline
+                Product Marketing and strategist by weekday. Avid reader, cocktail sipper, and brunch hopper by weekend.
               </p>
             </div>
           </div>
@@ -198,7 +198,7 @@ const App = () =>
                 Meryl <span class="purple">/ Video</span>
               </strong>
               <p class="purple subtitle is-size-6">
-                Short bio text that can actually be a little bit long, so I left enough room for a small paragraph rather than one little tagline
+                Product Marketer by weekday. Dog cuddler and wedding videographer by weekend.
               </p>
             </div>
           </div>
@@ -210,7 +210,7 @@ const App = () =>
                 Jonathan <span class="purple">/ Web</span>
               </strong>
               <p class="purple subtitle is-size-6">
-                Short bio text that can actually be a little bit long, so I left enough room for a small paragraph rather than one little tagline
+                Lead Front-end Software Engineer by weekday. Professional putzer, cat dad, and short story writer by weekend.
               </p>
             </div>
           </div>
@@ -222,7 +222,7 @@ const App = () =>
                 Emily <span class="purple">/ Writing</span>
               </strong>
               <p class="purple subtitle is-size-6">
-                Short bio text that can actually be a little bit long, so I left enough room for a small paragraph rather than one little tagline
+                Technical Writer by weekday. Novelist by night. Award-winning TV watcher by weekend.
               </p>
             </div>
           </div>
