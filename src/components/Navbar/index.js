@@ -4,6 +4,7 @@ import preact from 'preact';
 
 import Logo from '../Logo/index';
 import style from './style.scss';
+import { scrollToID } from '../../utility.js';
 
 
 const colorClass = (y) => {
@@ -43,11 +44,17 @@ class Navbar extends preact.Component {
         <Logo />
 
         <div class="navbar-start">
-          <a class="navbar-item has-text-weight-bold has-text-white" to="#about">
+          <a
+            class="navbar-item has-text-weight-bold has-text-white"
+            onClick={() => scrollToID("services")}
+          >
             Services
           </a>
 
-          <a class="navbar-item has-text-weight-bold has-text-white" to="#team">
+          <a
+            class="navbar-item has-text-weight-bold has-text-white"
+            onClick={() => scrollToID("team")}
+          >
             Team
           </a>
         </div>
@@ -56,7 +63,8 @@ class Navbar extends preact.Component {
           <div class="navbar-item">
             <a
               class="navbar__link button is-size-7 "
-              href="#collab">
+              onClick={() => scrollToID("contact")}
+            >
               Work with us
             </a>
           </div>

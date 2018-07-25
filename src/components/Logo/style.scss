@@ -3,4 +3,7 @@
   font-weight: 700;
   line-height: 0.65rem;
   text-align: center;
+  &:hover {
+    background: transparent;
+  }
 }

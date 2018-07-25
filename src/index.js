@@ -12,5 +12,3 @@ preact.render(<Main />, mountNode, mountNode.lastChild);
 if (module.hot) {
   module.hot.accept();
 }
-
-console.log("LOADED")

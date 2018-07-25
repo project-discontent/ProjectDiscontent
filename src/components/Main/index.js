@@ -12,6 +12,8 @@ import portraitJ from "../../../static/images/portraitJ.png";
 import portraitM from "../../../static/images/portraitM.png";
 import portraitN from "../../../static/images/portraitN.png";
 
+import { scrollToID } from '../../utility.js';
+
 const App = () =>
   <div>
     <Navbar/>
@@ -31,7 +33,7 @@ const App = () =>
           Project Discontent is a volunteer organization that helps to spread the reach of causes for justice and equality
         </p>
 
-        <div class="pd__cta red">
+        <div class="pd__cta red" onClick={() => scrollToID("contact")}>
           Work with us
           <br/>
           ↓
