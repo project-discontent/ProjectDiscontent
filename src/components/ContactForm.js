@@ -20,7 +20,7 @@ const TextArea = ({ name, label, onChange }) =>
   <div class="field">
     <label class="white label is-size-7">{label}</label>
     <div class="control">
-      <input
+      <textarea
         class="textarea is-size-7 is-radiusless"
         name={name}
         onChange={onChange}
