@@ -77,21 +77,18 @@ const App = () =>
             <div class="tile is-child">
               <strong class="white is-size-6">WRITING</strong>
               <p class="purple subtitle is-size-6">
-                Text text text about what we make
               </p>
             </div>
 
             <div class="tile is-child">
               <strong class="white is-size-6">DESIGN</strong>
               <p class="purple subtitle is-size-6">
-                Text text text about what we make
               </p>
             </div>
 
             <div class="tile is-child">
               <strong class="white is-size-6">PHOTOGRAPHY</strong>
               <p class="purple subtitle is-size-6">
-                Text text text about what we make
               </p>
             </div>
           </div>
@@ -100,14 +97,12 @@ const App = () =>
             <div class="tile is-child">
               <strong class="white is-size-6">VIDEO</strong>
               <p class="purple subtitle is-size-6">
-                Text text text about what we make
               </p>
             </div>
 
             <div class="tile is-child">
               <strong class="white is-size-6">WEB</strong>
               <p class="purple subtitle is-size-6">
-                Text text text about what we make
               </p>
             </div>
             <div class="tile is-child">
